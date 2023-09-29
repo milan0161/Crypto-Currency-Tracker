@@ -12,7 +12,7 @@ import {
   removeFromFavoriteCurrencies,
 } from '../../features/Currency/state/currencySlice';
 import useLogin from '../hooks/useLogin';
-import { DETAILS_PAGE_TABLE_HEADERS } from '../util/Constants';
+import { DETAILS_PAGE_TABLE_HEADERS } from '../util/constants';
 
 const DetailsPage = () => {
   const { symbol } = useParams();

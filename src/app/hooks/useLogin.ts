@@ -14,7 +14,7 @@ const useLogin = (): [
       return;
     }
     return;
-  }, []);
+  }, [isLoggedIn]);
 
   return [isLoggedIn, setIsLoggedIn];
 };

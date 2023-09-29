@@ -1,10 +1,16 @@
-import { Navigate, Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { checkIsLoggedIn } from '../util/login';
+import { useEffect } from 'react';
 
 const LoginGuard = () => {
+  const navigate = useNavigate();
   const isLoggedIn = checkIsLoggedIn();
 
-  if (isLoggedIn == false) return <Navigate to={'/'} replace />;
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate('/');
+    }
+  }, []);
 
   return <Outlet />;
 };

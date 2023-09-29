@@ -33,4 +33,7 @@
   .table_shadow {
     @apply shadow-md;
   }
+  .loading_indicator {
+    @apply text-center text-xl mt-[10%];
+  }
 }
