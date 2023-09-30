@@ -1,7 +1,7 @@
 import { useGetSymbolsQuery } from '../../features/Currency/api/currencyApi';
 import CurrencySymbolsList from '../../features/Currency/data/CurrencySymbolsList';
 import CurrencyTableHead from '../../features/Currency/data/CurrencyTableHead';
-import { HOME_PAGE_TABLE_HEADERS } from '../util/Constants';
+import { HOME_PAGE_TABLE_HEADERS } from '../util/constants';
 
 export const HomePage = () => {
   const { data, isLoading } = useGetSymbolsQuery();

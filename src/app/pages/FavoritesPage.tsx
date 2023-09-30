@@ -1,7 +1,7 @@
 import CurrencySymbolsList from '../../features/Currency/data/CurrencySymbolsList';
 import CurrencyTableHead from '../../features/Currency/data/CurrencyTableHead';
 import { useAppSelector } from '../store/store';
-import { FAVORITES_PAGE_TABLE_HEADERS } from '../util/Constants';
+import { FAVORITES_PAGE_TABLE_HEADERS } from '../util/constants';
 
 const FavoritesPage = () => {
   const favorites = useAppSelector(
